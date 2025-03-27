@@ -1,7 +1,7 @@
 
 ## Missing Symptom Prediction
 
-This repository shows a basic proof of concept for a tool which predicts a undiagnosed, lethal patient symptom given a set of up to 10 other known symptoms. 
+This repository shows a tool which predicts a undiagnosed, lethal patient symptom given a set of up to 10 other known symptoms. 
 A 'lethal' symptom is a MedDRA terms such that the probability of a patient dying given the 'lethal' symptom is above 20% in the VAERS database.
 The base nerual network model was trained utilizing patient observations from the VAERS dataset.
 
