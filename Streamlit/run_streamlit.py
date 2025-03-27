@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 base_path = os.getcwd()
 st.markdown(base_path)
 st.markdown(os.listdir(base_path))
-st.markdown(os.listdir(base_path + '\Streamlit'))
+st.markdown(os.listdir(base_path + '/Streamlit'))
 
 # load in the model, test data, non-conformity score limits, and vocab dictionaries
 @st.cache_resource
