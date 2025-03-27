@@ -1,10 +1,9 @@
 
 import streamlit as st
 
+import os
 import numpy as np
 import pandas as pd
-
-
 
 import tensorflow
 
@@ -12,7 +11,7 @@ import tensorflow
 #%%
 
 st.set_page_config(layout="wide")
-base_path = '{folder_location}\\Streamlit\\'
+base_path = os.getcwd() + '\\'
 
 
 # load in the model, test data, non-conformity score limits, and vocab dictionaries
