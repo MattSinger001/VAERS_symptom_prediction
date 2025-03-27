@@ -12,7 +12,7 @@ import tensorflow
 #%%
 
 st.set_page_config(layout="wide")
-base_path = 'C:\\Users\\Matth\\Documents\\Python_Scripts\\VAERS\\Streamlit\\'
+base_path = '{folder_location}\\Streamlit\\'
 
 
 # load in the model, test data, non-conformity score limits, and vocab dictionaries
