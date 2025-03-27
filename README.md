@@ -15,7 +15,14 @@ We recommend the utilization of the 'probability' non-conformity score.
 The model has two modes of input: 'Manual' and 'Test Observations'. The 'Manual' option will allow a user to enter into 10 possible MedDRA High Level Group Terms.
 The 'Test Obserrvations' option allows for a user to examine observations from the test dataset inorder to evaluate how accurate the model is.
 
+# Installation
+To run the above code, simply download the given folder and edit run_streamlit.py. The variable 'base_path' needs to be modified to the location of the downloaded folder.
 
+Additionally your python environment needs to contain the following libraries:
+  - Streamlit
+  - Numpy
+  - Pandas
+  - Tensorflow
 
 # Test Observations Example
 ![streamlit_example](https://github.com/user-attachments/assets/4ba13244-6bf9-43f7-b01b-82378577f908)
