@@ -17,18 +17,18 @@ base_path = os.getcwd() + '\\'
 # load in the model, test data, non-conformity score limits, and vocab dictionaries
 @st.cache_resource
 def load_model():
-    base_model = keras.models.load_model(base_path + 'prediction_model')
+    base_model = keras.models.load_model(base_path + 'Streamlit\\prediction_model')
     #base_model = keras.layers.TFSMLayer(base_path + 'prediction_model',call_endpoint='serving_default')
     
-    test_data = pd.read_csv(base_path + 'test_data.csv')
+    test_data = pd.read_csv(base_path + 'Streamlit\\test_data.csv')
     
     test_inputs = test_data.iloc[:,:10]
     test_labels = test_data.iloc[:,-1]
     
-    limits = pd.read_csv(base_path + 'limits.csv')
-    coverages = pd.read_csv(base_path + 'coverages.csv')
+    limits = pd.read_csv(base_path + 'Streamlit\\limits.csv')
+    coverages = pd.read_csv(base_path + 'Streamlit\\coverages.csv')
     
-    vocab = pd.read_csv(base_path + 'vocab_hlgt.csv')
+    vocab = pd.read_csv(base_path + 'Streamlit\\vocab_hlgt.csv')
 
     vocab_hlgt_idx= {k:v for k, v in zip(vocab['symptom_hlgt'],vocab['uid'])}
     vocab_idx_hlgt = {}
