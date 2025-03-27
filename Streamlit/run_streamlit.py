@@ -11,7 +11,7 @@ from tensorflow import keras
 #%%
 
 st.set_page_config(layout="wide")
-base_path = os.getcwd() + '/Streamlit/
+base_path = os.getcwd() + '/Streamlit/'
 
 
 # load in the model, test data, non-conformity score limits, and vocab dictionaries
