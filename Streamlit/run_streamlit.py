@@ -17,8 +17,6 @@ base_path = os.getcwd() + '\\'
 # load in the model, test data, non-conformity score limits, and vocab dictionaries
 @st.cache_resource
 def load_model():
-
-    #base_model = tensorflow.keras.models.load_model(base_path + 'prediction_model')
     base_model = tensorflow.keras.layers.TFSMLayer(base_path + 'prediction_model',call_endpoint='serving_default')
     
     test_data = pd.read_csv(base_path + 'test_data.csv')
