@@ -24,7 +24,6 @@ Additionally your python environment needs to contain the following libraries:
   - Pandas
   - Tensorflow
 
-To generate the streamlit web app run the following command on your anaconda command prompt or equivalent CLI : streamlit run _folder_location_/run_streamlit.py
 
 # Test Observations Example
 ![streamlit_example](https://github.com/user-attachments/assets/4ba13244-6bf9-43f7-b01b-82378577f908)
