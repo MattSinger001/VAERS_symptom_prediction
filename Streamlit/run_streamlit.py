@@ -18,7 +18,8 @@ base_path = os.getcwd() + '\\'
 @st.cache_resource
 def load_model():
 
-    base_model = tensorflow.keras.models.load_model(base_path + 'prediction_model')
+    #base_model = tensorflow.keras.models.load_model(base_path + 'prediction_model')
+    base_model = tensorflow.keras.layers.TFSMLayer(base_path + 'prediction_model')
     
     test_data = pd.read_csv(base_path + 'test_data.csv')
     
